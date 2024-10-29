@@ -16,7 +16,7 @@ export default function NewsItem({title, discp, imageurl, url, author, time, sou
   return (
     <div className="card m-2">
         {url ? (
-          <div><img src="https://picsum.photos/200/300" className="card-img-top" alt="..." height="200px"  /><span className="position-absolute top-0 start-0  badge  bg-danger">
+          <div><img src={imageurl} className="card-img-top" alt="..." height="200px"  /><span className="position-absolute top-0 start-0  badge  bg-danger">
           {source}
            <span className="visually-hidden">unread messages</span>
          </span></div>
